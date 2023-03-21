@@ -199,7 +199,24 @@ return [
         // Laravel Excel Provider
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
+        /*
+        * Firebase Service Providers...
+        */
+        Kreait\Laravel\Firebase\ServiceProvider::class,
 
+
+    ],
+
+    'debug_hide' => [
+        '_ENV' => [
+            'FIREBASE_DATABASE_URL',
+            'FIREBASE_CONFIG_JSON',
+        ],
+
+        '_SERVER' => [
+            'APP_KEY',
+            'DB_PASSWORD',
+        ],
     ],
 
     /*

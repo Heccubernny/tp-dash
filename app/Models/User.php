@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Models;
 
@@ -8,9 +9,15 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+
+/**
+ *
+ */
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens;
+    use HasFactory;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -19,9 +26,26 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'displayName',
         'email',
+        'address',
+        'fullname',
+        'phone',
+        'image',
+        'uid',
         'password',
     ];
+//    private mixed $localId;
+
+    public function getAuthIdentifierName(): string
+    {
+        return 'uid';
+    }
+
+    public function getAuthIdentifier(){
+        return $this->uid;
+    }
+
 
     /**
      * The attributes that should be hidden for serialization.

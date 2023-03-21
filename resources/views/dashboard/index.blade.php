@@ -3,4 +3,3 @@
         Admin Overview
     </x-slot:title>
 </x-header>
-<x-footer/>

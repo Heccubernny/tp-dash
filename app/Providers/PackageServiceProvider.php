@@ -5,7 +5,6 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use App\View\Components\Header;
-use App\View\Components\Footer;
 class PackageServiceProvider extends ServiceProvider
 {
     /**
@@ -23,7 +22,6 @@ class PackageServiceProvider extends ServiceProvider
     {
         //
         Blade::component('header', Header::class);
-        Blade::component('footer', Footer::class);
 
     }
 }

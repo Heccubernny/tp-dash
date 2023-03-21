@@ -1,0 +1,21 @@
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Style the custom scrollbar */
+.simplebar-scrollbar {
+    background-color: #f0f0f0;
+    width: 8px;
+}
+
+.simplebar-scrollbar:before {
+    background-color: #999;
+    border-radius: 4px;
+}
+
+.simplebar-track.simplebar-vertical {
+    right: 0;
+    width: 8px;
+}

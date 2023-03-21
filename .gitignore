@@ -1,7 +1,7 @@
 /.phpunit.cache
 /node_modules
 /public/build
-/public/hot
+/public/Objective_To_Complete
 /public/storage
 /storage/*.key
 /vendor
@@ -17,3 +17,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+taskpadidb-firebase-adminsdk-82h79-34d4246794.json
+/resources/credentials/
+/public/taskpadidb-default-rtdb-export.json
+/public/jsoncrack.com.png
+/public/jsoncrack.com.svg
